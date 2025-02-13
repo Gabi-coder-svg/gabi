@@ -138,9 +138,18 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('modal').style.display = 'none';
     };
 
-    // Fechar modal ao clicar fora dele
+    // Fechar modal ao clicar fora dele, funcionando no celular também
     window.onclick = function(e) {
         const modalElement = document.getElementById('modal');
-        if (e.target === modalElement) fecharModal();
+        if (e.target === modalElement || e.target === document.body) {
+            fecharModal();
+        }
     };
+
+    // Fechar modal em dispositivos móveis (adicional para toque)
+    modal.addEventListener('touchstart', function(e) {
+        if (e.target === modal) {
+            fecharModal();
+        }
+    });
 });
