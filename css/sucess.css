@@ -1,0 +1,64 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo geral da página */
+body {
+    background-color: #f8e8ee; /* Fundo rosa pastel suave */
+    color: #5a3d5c; /* Texto roxo acinzentado */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #c44569; /* Rosa queimado */
+    margin-bottom: 10px;
+}
+
+/* Mensagem */
+#mensagem {
+    font-size: 1.2rem;
+    color: #5a3d5c; /* Cor do texto */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    max-width: 600px; /* Largura máxima para evitar textos muito longos */
+    padding: 15px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Botão de Play */
+.play-container {
+    width: 60px;
+    height: 60px;
+    background-color: #c44569; /* Rosa queimado */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-container:hover {
+    background-color: #9a3763; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Ícone de Play */
+.play-container img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1); /* Deixa o ícone branco */
+}

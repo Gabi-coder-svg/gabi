@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Concluída</title>
+    <script defer src="success.js"></script>
+    <link rel="stylesheet" href="/css/sucess.css">
+</head>
+<body>
+    <h1>Obrigado pela sua compra!</h1>
+    <p id="mensagem">Ei, você! Se já realizou a compra, enviamos um e-mail com o link para baixar seus arquivos. 🎁✨ Verifique a caixa de entrada e o spam. Ah, e clique aqui para ouvir um áudio especial de agradecimento que preparei só para você. É a minha forma de dizer "obrigada"! 💖
+
+        Beijos, Gabriela Bustamente.</p>
+
+   <!-- Botão de Play/Pause -->
+<div class="play-container" id="playButton">
+    <img src="/assets/imagens/play.png" id="playIcon" alt="Play">
+</div>
+
+<!-- Áudio de confirmação -->
+<audio id="audioSucesso">
+    <source src="success.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const audio = document.getElementById("audioSucesso");
+            const playButton = document.getElementById("playButton");
+            const playIcon = document.getElementById("playIcon");
+        
+            let isPlaying = false;
+        
+            playButton.addEventListener("click", () => {
+                if (isPlaying) {
+                    audio.pause();
+                } else {
+                    audio.play().catch(error => console.log("Autoplay bloqueado:", error));
+                }
+            });
+        
+            // Atualiza o ícone quando o áudio começa a tocar
+            audio.addEventListener("play", () => {
+                playIcon.src = "/assets/imagens/pause.png"; // Ícone de pause
+                isPlaying = true;
+            });
+        
+            // Atualiza o ícone quando o áudio for pausado
+            audio.addEventListener("pause", () => {
+                playIcon.src = "/assets/imagens/play.png"; // Ícone de play
+                isPlaying = false;
+            });
+        
+            // Reseta o ícone quando o áudio termina
+            audio.addEventListener("ended", () => {
+                playIcon.src = "play-icon.png";
+                isPlaying = false;
+            });
+        });
+    </script>
+</body>
+</html>
