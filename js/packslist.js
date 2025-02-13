@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             preco: "49.90", 
             checkoutLink: "https://pay.risepay.com.br/Pay/8104a6b5340f4ea1b160ce8b95d94d22",
             imagem: "assets/imagens/produtos/prod3.jpeg",
-            descricao: "Mais de 100 ícones exclusivos para seus projetos.",
+            descricao: "Tesão à flor da pele! 30 fotos e 15 vídeos que vão te deixar pulsando de vontade!",
             objectPosition: "center center" // Ajuste neutro
         },
         {
