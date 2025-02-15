@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
             id: 1, 
             nome: "Delírio Proibido 😈🔞", 
-            preco: "19,90", 
+            preco: "12,90", 
             checkoutLink: "https://pagseguroonline.com/checkout/cm744dj6502l91x1m0vh2g30g?offer=TPCFO6V",
             imagem: "assets/imagens/produtos/prod1.jpeg",
             descricao: "Vem se perder nesse pacotão de pura safadeza: 10 fotos e 5 vídeos pra te deixar sem fôlego! 😏🔥.",
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
             id: 2, 
             nome: "Pecado Vip 💦😈", 
-            preco: "29.90", 
+            preco: "22.90", 
             checkoutLink: "https://pagseguroonline.com/checkout/cm748stym038qmc59u5f4qt0j?offer=PZ4ECAW",
             imagem: "assets/imagens/produtos/prod2.jpeg",
             descricao: "Um show de tentação te espera: 20 fotos e 10 vídeos que vão te deixar querendo mais! 😈🔥",
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
             id: 3, 
             nome: "Tentação Suprema 🥵", 
-            preco: "49.90", 
+            preco: "32.90", 
             checkoutLink: "https://pagseguroonline.com/checkout/cm748xy0303lyko0n53vrmyag?offer=ERO9G9D",
             imagem: "assets/imagens/produtos/prod3.jpeg",
             descricao: "Tesão à flor da pele! 30 fotos e 15 vídeos que vão te deixar pulsando de vontade!",
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 4,
             nome: "Liga aí, safado... quero te ver e imaginar tudo que vou fazer depois. 🔥😈",
-            preco: "64.90",
+            preco: "55.90",
             checkoutLink: "https://pagseguroonline.com/checkout/cm7496ib0037013vkg2aiz0jb?offer=ZVCSL8Q",
             imagem: "",
-            descricao: "Este pacote inclui a chamada exclusiva e, se você quiser, por apenas R$ 15 a mais, você leva o Pecado Vip, com conteúdos ainda mais intensos e exclusivos. Não perca essa oportunidade de tornar a experiência ainda mais quente!",
+            descricao: "Este pacote inclui a chamada exclusiva e, se você quiser, por apenas R$ 10 a mais, você leva o Pecado Vip, com conteúdos ainda mais intensos e exclusivos. Não perca essa oportunidade de tornar a experiência ainda mais quente!",
             fullwidth: true,
             objectPosition: "top center" // Para focar no topo da imagem
         }
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (produto.id === 4) {
             vipBtn.style.display = 'block'; // Exibe o botão somente no produto com id 4
             vipBtn.onclick = () => {
-                alert("Você adicionou o Pacote Pecado Vip por apenas R$ 15!");
+                alert("Você adicionou o Pacote Pecado Vip por apenas R$ 10!");
                 
                 // Link do checkout do Pecado Vip
                 const novoCheckoutLink = "https://pagseguroonline.com/checkout/cm74a3drl036l1x1moo0htakz?offer=C8DLPXR"; // Atualize com o link correto
